@@ -1,6 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
+<<<<<<< HEAD
 /dist
 /tmp
 /out-tsc
@@ -8,6 +9,20 @@
 
 # Node
 /Client/node_modules
+/API/obj/Debug/net7.0/API.assets.cache
+/API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache
+/Core/obj/Debug/net7.0/Core.assets.cache
+/Infra/obj/Debug/net7.0/Infra.assets.cache
+/Infra/obj/Debug/net7.0/Infra.csproj.AssemblyReference.cache
+
+Client/dist
+Client/tmp
+Client/out-tsc
+Client/bazel-out
+
+# Node
+
+>>>>>>> Client
 npm-debug.log
 yarn-error.log
 
@@ -29,6 +44,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+<<<<<<< HEAD
 /.angular/cache
 .sass-cache/
 /connect.lock
@@ -36,6 +52,15 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+=======
+Client/.angular/cache
+.sass-cache/
+Client/connect.lock
+Client/coverage
+Client/libpeerconnection.log
+testem.log
+Client/typings
+>>>>>>> Client
 
 # System files
 .DS_Store
