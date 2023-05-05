@@ -1,5 +1,6 @@
 using API.Extensions;
 using Infra.Data;
+using Infra.Data.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddIdentityServices(builder.Configuration);
+
 builder.Services.AddCors(opts => {
     opts.AddPolicy("AngularPolicy", config => {
         config
@@ -34,6 +37,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("AngularPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
@@ -41,9 +45,11 @@ app.MapControllers();
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 var context = services.GetRequiredService<VacaDbContext>();
+var identityContext = services.GetRequiredService<VacaIdentityDbContext>();
 try
 {
-    await context.Database.MigrateAsync();
+    //await context.Database.MigrateAsync();
+    await identityContext.Database.MigrateAsync();
 }
 catch(Exception)
 { }
