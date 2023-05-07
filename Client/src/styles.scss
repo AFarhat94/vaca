@@ -4,3 +4,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.form-input-group
+{
+    margin: 10px 0px;
+}
+
+.form-input-group input
+{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-button
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(193 44 148);
+    color: white;
+}
+
+.form-button:hover
+{
+    cursor: pointer;
+    background-color: rgba($color: rgb(193 44 148), $alpha: 0.8);
+}
