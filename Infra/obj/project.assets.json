@@ -1452,11 +1452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj",
+      "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj",
       "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\obj\\",
+      "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1476,8 +1476,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj"
+            "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj"
             }
           }
         }

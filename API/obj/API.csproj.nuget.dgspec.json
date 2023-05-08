@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\API\\API.csproj": {}
+    "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\API\\API.csproj": {
+    "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\API\\API.csproj",
+        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj",
         "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\API\\obj\\",
+        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj": {
-                "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj"
+              "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj"
               }
             }
           }
@@ -105,14 +105,14 @@
         }
       }
     },
-    "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj": {
+    "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\obj\\",
+        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -169,14 +169,14 @@
         }
       }
     },
-    "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj": {
+    "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj",
+        "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -196,8 +196,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj"
+              "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Core\\Core.csproj"
               }
             }
           }

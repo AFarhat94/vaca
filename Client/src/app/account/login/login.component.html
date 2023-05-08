@@ -1,12 +1,12 @@
 <div class="login-form">
     <div class="login-form-wrap">
-        <form>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="form-input-group">
-                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="text" formControlName="email" name="email" id="email" placeholder="Email">
             </div>
         
             <div class="form-input-group">
-                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" formControlName="password" name="password" id="password" placeholder="Password">
             </div>
         
             <button class="form-button">Login</button>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqIQXLdEgvpdlW4pDQ0Kgz91MYBIuWfMKOWhRxQKaxveA0xRvL88hVZVPzD+vTrxBgepejr+jqSL014AoWVHPQ==",
+  "dgSpecHash": "ObvAUXwCNzs/fXC1RPMafi9rSgS/5lXR06H9F1FCseH0OCNaZZxg9bJJs8y9CEbwZWCOOIHvuVldOxMAf68HNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Infra\\Infra.csproj",
+  "projectFilePath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdallah.farhat\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\abdallah.farhat\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",

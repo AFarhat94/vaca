@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapModule } from './map/map.module';
 import { AccountModule } from './account/account.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AccountModule } from './account/account.module';
   imports: [
     BrowserModule,
     MapModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
