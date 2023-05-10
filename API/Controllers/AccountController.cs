@@ -1,7 +1,8 @@
+using System.Security.Claims;
 using API.Dtos.Identity;
 using Core.Entities.Identity;
 using Core.Interfaces.Identity;
-using Infra.Services.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,21 @@ namespace API.Controllers
             _userManager = userManger;
             _signInManager = signInManager;
             _token = token;
+        }
+
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<UserDTO>> GetCurrentUser()
+        {
+            var email = HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
+            var user = await _userManager.FindByEmailAsync(email);
+
+            return Ok(new UserDTO()
+            {
+                Email = user.Email,
+                Token = _token.CreateToken(user)
+            });
         }
 
         [HttpPost("login")]

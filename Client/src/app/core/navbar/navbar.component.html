@@ -1,0 +1,9 @@
+<div class="navbar" *ngIf="accountService.currentUser$ | async as user">
+    <div class="navbar-user-info">
+        Welcome {{ user.email }}
+    </div>
+
+    <div>
+        <button (click)="logout()">Logout</button>
+    </div>
+</div>
