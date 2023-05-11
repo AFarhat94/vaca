@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-map',
@@ -7,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class MapComponent {
   markerPositions : google.maps.LatLngLiteral[] = [];
+
+  @ViewChild(MapInfoWindow) infoWindow?: MapInfoWindow;
 
   mapOptions: google.maps.MapOptions= {
     center: { lat: 33.8736, lng: 35.8637 },
@@ -20,5 +24,15 @@ export class MapComponent {
     {
       this.markerPositions.push(event.latLng.toJSON());
     }
+  }
+
+  openMakerInfoWindow(marker: MapMarker)
+  {
+    this.infoWindow?.open(marker);
+  }
+
+  closeMarkerInfoWindow()
+  {
+    this.infoWindow?.close();
   }
 }

@@ -5,7 +5,17 @@
   (mapClick)="onMapClick($event)"
 >
   <map-marker 
-    *ngFor="let marker of markerPositions"
-    [position]="marker">
+    #marker = "mapMarker"
+    *ngFor="let markerPosition of markerPositions"
+    [position]="markerPosition"
+    (mapMouseover)="openMakerInfoWindow(marker)"
+    (mapMouseout)="closeMarkerInfoWindow()">
   </map-marker>
+
+  <map-info-window>
+    <h2>Memory From: 11/07/1994</h2>
+    <img src="https://storage.googleapis.com/topmedicalshoes_bucket/BACK-TO-SCHOOL.jpeg" alt="" class="info-map-image">
+  
+  </map-info-window>
+
 </google-map>

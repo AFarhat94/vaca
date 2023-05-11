@@ -9,11 +9,16 @@
 
 # Node
 /Client/node_modules
+/API/obj/Debug/
 /API/obj/Debug/net7.0/API.assets.cache
 /API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache
 /Core/obj/Debug/net7.0/Core.assets.cache
 /Infra/obj/Debug/net7.0/Infra.assets.cache
 /Infra/obj/Debug/net7.0/Infra.csproj.AssemblyReference.cache
+/API/identity.db-shm
+/API/identity.db-wal
+
+
 
 Client/dist
 Client/tmp
