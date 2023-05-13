@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapModule } from './map/map.module';
-import { AccountModule } from './account/account.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
+import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,14 @@ import { CoreModule } from './core/core.module';
   imports: [
     CoreModule,
     BrowserModule,
-    MapModule,
     HttpClientModule,
+    MapModule,
+    ModalModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BsModalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

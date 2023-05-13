@@ -768,30 +768,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abdallah.farhat\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/abdallahfarhat/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj",
+      "projectUniqueName": "/Users/abdallahfarhat/Desktop/vaca/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\Vaca\\Core\\obj\\",
+      "projectPath": "/Users/abdallahfarhat/Desktop/vaca/Core/Core.csproj",
+      "packagesPath": "/Users/abdallahfarhat/.nuget/packages/",
+      "outputPath": "/Users/abdallahfarhat/Desktop/vaca/Core/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\abdallah.farhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/abdallahfarhat/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -831,7 +825,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

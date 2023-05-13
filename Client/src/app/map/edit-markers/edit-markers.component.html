@@ -1,0 +1,26 @@
+<div class="map-edit-form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <div class="map-form-header">
+            <h4>Add New Memory</h4>
+        </div>
+
+        <div formGroupName="coordinations">
+            <input formControlName="latitude" type="hidden">
+            <input formControlName="longitude" type="hidden">
+        </div>
+
+
+        <div class="form-input-group">
+            <label for="marker-name">Title</label>
+            <input formControlName="title"  type="text" id="marker-name">
+        </div>
+
+        <div class="form-input-group">
+            <label for="marker-name">Description</label>
+            <textarea formControlName="description" id="marker-name"></textarea>
+        </div>
+
+        <button class="form-button">ADD TO MEMORY</button>
+    </form>
+</div>

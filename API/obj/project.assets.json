@@ -2681,38 +2681,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abdallah.farhat\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/abdallahfarhat/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj",
+      "projectUniqueName": "/Users/abdallahfarhat/Desktop/vaca/API/API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\abdallah.farhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\API\\obj\\",
+      "projectPath": "/Users/abdallahfarhat/Desktop/vaca/API/API.csproj",
+      "packagesPath": "/Users/abdallahfarhat/.nuget/packages/",
+      "outputPath": "/Users/abdallahfarhat/Desktop/vaca/API/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\abdallah.farhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/abdallahfarhat/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\abdallah.farhat\\Desktop\\vaca\\Infra\\Infra.csproj"
+            "/Users/abdallahfarhat/Desktop/vaca/Infra/Infra.csproj": {
+              "projectPath": "/Users/abdallahfarhat/Desktop/vaca/Infra/Infra.csproj"
             }
           }
         }
@@ -2781,7 +2775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

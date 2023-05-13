@@ -48,7 +48,7 @@ var context = services.GetRequiredService<VacaDbContext>();
 var identityContext = services.GetRequiredService<VacaIdentityDbContext>();
 try
 {
-    //await context.Database.MigrateAsync();
+    await context.Database.MigrateAsync();
     await identityContext.Database.MigrateAsync();
 }
 catch(Exception)

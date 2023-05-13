@@ -6,11 +6,11 @@ namespace Infra.Data
 {
     public class VacaDbContext : DbContext
     {
-        public VacaDbContext(DbContextOptions<VacaDbContext> options)
+        public VacaDbContext(DbContextOptions<VacaDbContext> options) : base(options)
         { }
 
         public DbSet<Place> Places { get; set; }
-        public DbSet<Location> Locations { get; set; }
+        public DbSet<Coordinations> Coordinations { get; set; }
         public DbSet<Image> Images { get; set; }
 
 

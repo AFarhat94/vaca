@@ -9,10 +9,11 @@ namespace Infra.Data
         public void Configure(EntityTypeBuilder<Place> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.Name).IsRequired();
+            builder.Property(x => x.Title).IsRequired();
             builder
-                .HasOne(x => x.Location)
-                .WithOne();
+                .HasOne(x => x.Coordinations)
+                .WithOne()
+                .HasForeignKey<Place>(x => x.CoordinationsId);
 
             builder
                 .HasMany(x => x.Images)
