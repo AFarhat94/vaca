@@ -33,6 +33,8 @@ namespace API.Controllers
             return Ok(new UserDTO()
             {
                 Email = user.Email,
+                GivenName = user.GivenName,
+                Name = user.Name,
                 Token = _token.CreateToken(user)
             });
         }
@@ -49,6 +51,8 @@ namespace API.Controllers
             return Ok(new UserDTO()
             {
                 Email = user.Email,
+                GivenName = user.GivenName,
+                Name = user.Name,
                 Token = _token.CreateToken(user)
             });
         }
@@ -59,6 +63,8 @@ namespace API.Controllers
             var user = new AppUser()
             {
                 Email = register.Email,
+                GivenName = register.GivenName,
+                Name = register.Name,
                 UserName = register.Email
             };
 
@@ -67,6 +73,8 @@ namespace API.Controllers
 
             return Ok(new UserDTO(){
                 Email = user.Email,
+                GivenName = user.GivenName,
+                Name = user.Name,
                 Token = _token.CreateToken(user)
             });
         }
