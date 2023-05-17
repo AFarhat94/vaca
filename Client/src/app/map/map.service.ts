@@ -14,22 +14,12 @@ export class MapService {
 
   getAllByUser()
   {
-    const token = localStorage.getItem('token');
-
-    let headers = new HttpHeaders();
-    headers = headers.set("Authorization", `Bearer ${token}`);
-
-    return this.http.get<Marker[]>(this.apiUrl + 'place/getAll', { headers: headers });
+    return this.http.get<Marker[]>(this.apiUrl + 'place/getAll');
   }
   
 
   save(value: any)
   {
-    const token = localStorage.getItem('token');
-
-    let headers = new HttpHeaders();
-    headers = headers.set("Authorization", `Bearer ${token}`);
-
-    return this.http.post(this.apiUrl + 'place/save', value, { headers: headers });
+    return this.http.post(this.apiUrl + 'place/save', value);
   }
 }
