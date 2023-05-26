@@ -18,7 +18,7 @@ export class AccountService {
 
   loadCurrentUser(token: string | null)
   {
-    if (token)
+    if (!token)
     {
       this.currentUserSource.next(null);
       return of(null);
@@ -26,7 +26,6 @@ export class AccountService {
 
     let headers = new HttpHeaders();
     headers = headers.set('content-Type', "application/json");
-    headers = headers.set('Authorization', `Bearer ${token}`);
 
     return this.http.get<User>(this.apiUrl + 'account', { headers }).pipe(
       map(user => {
@@ -42,6 +41,16 @@ export class AccountService {
         }  
       })
     );
+  }
+
+  save(value: any)
+  {
+    const token = localStorage.getItem('item');
+
+    let headers = new HttpHeaders();
+    headers = headers.set('Authorization', `Bearer ${token}`);
+
+    return this.http.post(this.apiUrl + 'account/register', value, { headers: headers });
   }
 
   logIn(value: any)
