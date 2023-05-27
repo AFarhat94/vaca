@@ -17,6 +17,7 @@ export class LoginComponent {
   );
 
   isNotAuthorise: boolean = false;
+  showPassword: boolean = false;
 
   constructor(private accountService: AccountService, private router: Router) { }
 

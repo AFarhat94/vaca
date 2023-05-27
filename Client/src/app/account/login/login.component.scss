@@ -1,0 +1,19 @@
+.show-password-button
+{
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    text-align: right;
+    width: 100%;
+}
+
+.show-password-button a
+{
+    text-decoration: underline;
+}
+
+.show-password-button a:hover
+{
+    text-decoration: none;
+}

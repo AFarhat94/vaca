@@ -10,7 +10,11 @@
             </div>
         
             <div class="form-input-group">
-                <input type="password" formControlName="password" name="password" id="password" placeholder="Password">
+                <input class="password-input" [type]="this.showPassword ? 'text' : 'password'" formControlName="password" name="password" id="password" placeholder="Password">
+                <button (click)="this.showPassword = this.showPassword ? false : true" class="show-password-button" type="button">
+                    <a *ngIf="!this.showPassword">Show Password</a>
+                    <a *ngIf="this.showPassword">Hide Password</a>
+                </button>
             </div>
 
             <div class="response-error-message" *ngIf="this.isNotAuthorise">
