@@ -42,3 +42,61 @@
     cursor: pointer;
     background-color: rgba($color: rgb(193 44 148), $alpha: 0.8);
 }
+
+.login-form .error-message
+{
+    color: #cdff8d;
+}
+
+
+.login-form
+{
+    background: url('https://cdn.britannica.com/36/178136-050-7F77D46B/village-Alpine-valley-canton-Saint-Moritz-Engadin.jpg');
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-form-wrap
+{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 40%;
+    padding: 25px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-wrap form
+{
+    width: 80%;
+}
+
+.login-form-wrap a
+{
+    color: wheat;
+    text-decoration: none;
+}
+
+.login-form-wrap a:hover
+{
+    text-decoration: underline;
+}
+
+.login-form-message
+{
+    text-align: center;
+    color: white;
+}
+
+.login-form .response-error-message
+{
+    background: #ddb7b7;
+    border-radius: 10px;
+    padding: 0px 7px 0px 7px;
+    color: #622727;
+}

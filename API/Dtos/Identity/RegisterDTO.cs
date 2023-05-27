@@ -7,4 +7,4 @@ namespace API.Dtos.Identity
         public string GivenName { get; set; }
         public string Password { get; set; }
     }
-}
+} 

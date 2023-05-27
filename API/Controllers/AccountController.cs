@@ -1,5 +1,7 @@
 using System.Security.Claims;
+using System.Text;
 using API.Dtos.Identity;
+using API.Erros;
 using Core.Entities.Identity;
 using Core.Interfaces.Identity;
 using Microsoft.AspNetCore.Authorization;
@@ -69,8 +71,16 @@ namespace API.Controllers
             };
 
             var create = await _userManager.CreateAsync(user, register.Password);
-            if (!create.Succeeded) return BadRequest(create.Errors);
-
+            if (!create.Succeeded) 
+            {
+                StringBuilder errorMessage = new StringBuilder();
+                foreach(var error in create.Errors)
+                {
+                    errorMessage.Append(error.Description); 
+                }
+                return BadRequest(create.Errors);
+            }
+            
             return Ok(new UserDTO(){
                 Email = user.Email,
                 GivenName = user.GivenName,

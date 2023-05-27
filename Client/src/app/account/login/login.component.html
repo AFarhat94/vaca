@@ -4,9 +4,21 @@
             <div class="form-input-group">
                 <input type="text" formControlName="email" name="email" id="email" placeholder="Email">
             </div>
+                        
+            <div class="error-message" *ngIf="this.form.get('email')?.invalid && (this.form.get('email')?.touched  || this.form.get('email')?.dirty)">
+                <p>Email Format Incorrect</p>
+            </div>
         
             <div class="form-input-group">
                 <input type="password" formControlName="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="response-error-message" *ngIf="this.isNotAuthorise">
+                <p>Username or Password Incorrect</p>
+            </div>
+
+            <div class="form-input-group">
+                <a [routerLink]="['/account/register']">Create new account.</a>
             </div>
         
             <button class="form-button">Login</button>

@@ -1,0 +1,62 @@
+<div class="login-form">
+    <div class="login-form-wrap">
+
+        <div class="login-form-message" *ngIf="this.validated===true">
+            <h3>Congratulation!</h3>
+            <hr>
+            <p>Your account has been created successfully. You can now embark on an exciting journey of capturing and cherishing memories by adding them to your map! Let the adventure begin!</p>
+            
+            <button class="form-button"><a [routerLink]="['/account/login']">Login</a></button>
+        </div>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="this.validated===false">
+
+            <div class="form-input-group">
+                <a [routerLink]="['/account/login']">&lt;&lt; Back To Login</a>
+            </div>
+
+            <div class="form-input-group">
+                <input type="text" formControlName="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="error-message"  *ngIf="this.form.get('email')?.invalid && (this.form.get('email')?.touched  || this.form.get('email')?.dirty)">
+                <p>Mail Format Incorrect</p>
+            </div>
+
+            <div class="form-input-group">
+                <input type="text" formControlName="name" name="name" id="name" placeholder="Name">
+            </div>
+
+            <div class="error-message"  *ngIf="this.form.get('name')?.invalid && (this.form.get('name')?.touched  || this.form.get('name')?.dirty)">
+                <p>Name should be at least 3 characters</p>
+            </div>
+
+            <div class="form-input-group">
+                <input type="text" formControlName="givenName" name="givenName" id="given-name" placeholder="Given Name">
+            </div>
+
+            <div class="error-message"  *ngIf="this.form.get('givenName')?.invalid && (this.form.get('givenName')?.touched  || this.form.get('givenName')?.dirty)">
+                <p>Given Name should be at least 3 characters</p>
+            </div>
+        
+            <div class="form-input-group">
+                <input type="password" formControlName="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="form-input-group">
+                <input type="password" formControlName="passwordCheck" name="password-check" id="password-ckech" placeholder="Password Confirmation">
+            </div>
+            <div class="error-message"  *ngIf="this.form.get('passwordCheck')?.invalid && (this.form.get('passwordCheck')?.touched  || this.form.get('passwordCheck')?.dirty)">
+                <p>Passwords should match</p>
+            </div>
+
+            <div class="response-error-message" *ngIf="this.errors">
+                <ul>
+                    <li *ngFor="let error of errors">{{ error.description }}</li>
+                </ul>
+            </div>
+        
+            <button class="form-button">Sign Up</button>
+        </form>
+    </div>
+</div>
