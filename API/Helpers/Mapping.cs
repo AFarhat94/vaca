@@ -9,8 +9,11 @@ namespace API.Helpers
         public Mapping()
         {
             CreateMap<Place, PlaceDTO>()
-                        .ForMember(d => d.Coordinations, o => o.MapFrom(s => s.Coordinations))
-                        .ForMember(d => d.Coordinations, o => o.MapFrom(s => s.Images));
+                        .ForMember(d => d.Coordinations, o => o.MapFrom(s => s.Coordinations));
+                        
+            CreateMap<Coordinations, CoordinationsDTO>()
+                        .ForMember(d => d.Lat, o => o.MapFrom(s => s.Latitude))
+                        .ForMember(d => d.Lng, o => o.MapFrom(s => s.Longitude));
         }
     }
 }

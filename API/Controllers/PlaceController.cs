@@ -1,4 +1,6 @@
 using System.Security.Claims;
+using API.Dtos;
+using AutoMapper;
 using Core.Entities;
 using Core.Entities.Identity;
 using Core.Interfaces;
@@ -13,21 +15,27 @@ namespace API.Controllers
 
         private readonly IPlaceService _service;
         private readonly UserManager<AppUser> _userManager;
-        public PlaceController(IPlaceService service, UserManager<AppUser> userManager)
+        private readonly IMapper _mapper;
+        public PlaceController(IPlaceService service, UserManager<AppUser> userManager, IMapper mapper)
         {
             _service = service;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
         [Authorize]
         [HttpGet("getAll")]
-        public async Task<ActionResult<IReadOnlyList<Place>>> GetAllPlacesByUser()
+        public async Task<ActionResult<IReadOnlyList<PlaceDTO>>> GetAllPlacesByUser()
         {
             var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email).Value;
             var user = await _userManager.FindByEmailAsync(email);
 
             var places = await _service.GetAllByUserAsync(user);
-            return Ok(places);
+            var placesDTO = places.Select(place => 
+                _mapper.Map<PlaceDTO>(place)
+            );
+
+            return Ok(placesDTO);
         }
 
         [Authorize]

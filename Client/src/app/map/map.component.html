@@ -4,18 +4,23 @@
   [options]="mapOptions"
   (mapClick)="onMapClick($event)"
 >
-  <map-marker 
-    #marker = "mapMarker"
-    *ngFor="let markerPosition of markerPositions"
-    [position]="markerPosition"
-    (mapMouseover)="openMakerInfoWindow(marker)"
-    (mapMouseout)="closeMarkerInfoWindow()">
-  </map-marker>
+  <ng-container *ngFor="let markerPosition of markerPositions">
 
-  <map-info-window>
-    <h2>Memory From: 11/07/1994</h2>
-    <img src="https://storage.googleapis.com/topmedicalshoes_bucket/BACK-TO-SCHOOL.jpeg" alt="" class="info-map-image">
-  
-  </map-info-window>
+    <map-marker 
+      #marker = "mapMarker"
+      [position]="markerPosition.coordinations"
+      (mapMouseover)="openMakerInfoWindow(marker)"
+      (mapMouseout)="closeMarkerInfoWindow()">
+    </map-marker>
+
+    <map-info-window>
+      <h3>{{ markerPosition.title }}</h3>
+      <p>{{ markerPosition.description }}</p>
+    </map-info-window>
+
+  </ng-container>
+ 
+
+
 
 </google-map>
