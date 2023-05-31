@@ -54,10 +54,6 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.4, )"
@@ -66,11 +62,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -136,7 +128,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -199,11 +191,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

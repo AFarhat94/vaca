@@ -40,12 +40,13 @@ namespace API.Controllers
 
         [Authorize]
         [HttpPost("save")]
-        public async Task<ActionResult> Save(Place place)
+        public async Task<ActionResult> Save(PlaceDTO placeDTO)
         {
+            System.Console.WriteLine(placeDTO.Date);
             var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email).Value;
             var user = await _userManager.FindByEmailAsync(email);
-            place.UserId = user.Id;
-            await _service.AddAsync(place);
+            placeDTO.UserId = user.Id;
+            await _service.AddAsync(_mapper.Map<Place>(placeDTO));
             return Ok();
         }
     }
